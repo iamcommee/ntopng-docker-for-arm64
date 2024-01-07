@@ -12,7 +12,7 @@ services:
   ntopng:
     image: "ntop/ntopng_arm64.dev:latest"
     container_name: ntopng
-    command: "--community -d -w 9898 -W 0 -i eth0 --redis 127.0.0.1:6379:password"
+    command: "--community -d -w 3000 -W 0 -i eth0 --redis 127.0.0.1:6379:password"
     network_mode: host
     restart: always
     environment:
